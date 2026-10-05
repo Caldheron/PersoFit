@@ -1,0 +1,1142 @@
+{
+ "version": 1,
+ "exercices": [
+  {
+   "id": "velo-facile",
+   "nom": "Vélo facile",
+   "bloc": "echauffement",
+   "muscles": [
+    "jambes",
+    "cardio"
+   ],
+   "materiel": [
+    "velo"
+   ],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Pédale à allure tranquille, sans forcer, pour monter doucement en température.",
+   "minutes": 5
+  },
+  {
+   "id": "rameur-facile",
+   "nom": "Rameur facile",
+   "bloc": "echauffement",
+   "muscles": [
+    "corps entier"
+   ],
+   "materiel": [
+    "rameur"
+   ],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Rame à allure douce : jambes, dos puis bras, sans chercher la puissance.",
+   "minutes": 5
+  },
+  {
+   "id": "corde-echauffement",
+   "nom": "Corde à sauter",
+   "bloc": "echauffement",
+   "muscles": [
+    "mollets",
+    "cardio"
+   ],
+   "materiel": [
+    "corde"
+   ],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Saute à petits rebonds réguliers, poignets souples, en restant léger sur les pieds.",
+   "minutes": 3
+  },
+  {
+   "id": "jumping-jacks",
+   "nom": "Jumping jacks",
+   "bloc": "echauffement",
+   "muscles": [
+    "corps entier"
+   ],
+   "materiel": [],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Saute en écartant jambes et bras, puis reviens pieds joints, à rythme régulier.",
+   "minutes": 3
+  },
+  {
+   "id": "montees-genoux",
+   "nom": "Montées de genoux",
+   "bloc": "echauffement",
+   "muscles": [
+    "jambes",
+    "cardio"
+   ],
+   "materiel": [],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Sur place, monte les genoux à hauteur de hanche en alternant, bras en rythme.",
+   "minutes": 2
+  },
+  {
+   "id": "mobilite-hanches",
+   "nom": "Mobilité hanches",
+   "bloc": "echauffement",
+   "muscles": [
+    "hanches"
+   ],
+   "materiel": [],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Cercles de hanches et fentes lentes pour assouplir les articulations avant l'effort.",
+   "minutes": 3
+  },
+  {
+   "id": "mobilite-epaules",
+   "nom": "Mobilité épaules",
+   "bloc": "echauffement",
+   "muscles": [
+    "épaules"
+   ],
+   "materiel": [],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Cercles de bras, rotations des épaules et ouvertures de poitrine, sans forcer.",
+   "minutes": 3
+  },
+  {
+   "id": "rotations-tronc",
+   "nom": "Rotations du tronc",
+   "bloc": "echauffement",
+   "muscles": [
+    "tronc"
+   ],
+   "materiel": [],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Pieds écartés, tourne le buste de chaque côté, bras relâchés, bassin stable.",
+   "minutes": 2
+  },
+  {
+   "id": "squat-poids-corps",
+   "nom": "Squat poids du corps",
+   "bloc": "corps",
+   "muscles": [
+    "jambes",
+    "fessiers"
+   ],
+   "materiel": [],
+   "mode": "reps",
+   "niveaux": [
+    "Squat sur chaise",
+    "Squat poids du corps",
+    "Squat avec pause en bas"
+   ],
+   "adulteSeulement": false,
+   "description": "Pieds largeur d'épaules, descends comme pour t'asseoir, dos droit, puis remonte en poussant dans les talons.",
+   "series": 3,
+   "reps": 12
+  },
+  {
+   "id": "goblet-squat",
+   "nom": "Goblet squat",
+   "bloc": "corps",
+   "muscles": [
+    "jambes",
+    "fessiers"
+   ],
+   "materiel": [
+    "halteres"
+   ],
+   "mode": "reps",
+   "niveaux": [
+    "Squat poids du corps",
+    "Squat avec petit haltère",
+    "Goblet squat",
+    "Goblet squat, tempo lent",
+    "Squat bulgare, appui sur chaise"
+   ],
+   "adulteSeulement": false,
+   "description": "Tiens un haltère contre la poitrine et descends en squat en gardant le buste haut, puis remonte.",
+   "series": 3,
+   "reps": 10,
+   "chargeAvec": "halteres"
+  },
+  {
+   "id": "squat-halteres",
+   "nom": "Squat aux haltères",
+   "bloc": "corps",
+   "muscles": [
+    "jambes",
+    "fessiers"
+   ],
+   "materiel": [
+    "halteres"
+   ],
+   "mode": "reps",
+   "niveaux": [
+    "Haltères légers",
+    "Haltères",
+    "Haltères, tempo lent"
+   ],
+   "adulteSeulement": false,
+   "description": "Un haltère dans chaque main le long du corps, descends en squat dos droit, puis remonte sans verrouiller les genoux.",
+   "series": 3,
+   "reps": 10,
+   "chargeAvec": "halteres"
+  },
+  {
+   "id": "squat-barre",
+   "nom": "Squat à la barre",
+   "bloc": "corps",
+   "muscles": [
+    "jambes",
+    "fessiers"
+   ],
+   "materiel": [
+    "barre"
+   ],
+   "mode": "reps",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": true,
+   "description": "Barre posée sur les trapèzes, descends en gardant le dos neutre, puis remonte. Prévois un moyen sûr de poser la barre.",
+   "series": 3,
+   "reps": 8,
+   "chargeAvec": "barre"
+  },
+  {
+   "id": "fentes-alternees",
+   "nom": "Fentes alternées",
+   "bloc": "corps",
+   "muscles": [
+    "jambes",
+    "fessiers"
+   ],
+   "materiel": [],
+   "mode": "reps",
+   "niveaux": [
+    "Fentes poids du corps",
+    "Fentes avec haltères",
+    "Fentes marchées avec haltères"
+   ],
+   "adulteSeulement": false,
+   "description": "Fais un grand pas en avant, descends le genou arrière vers le sol, puis reviens et change de jambe.",
+   "series": 3,
+   "reps": 8,
+   "chargeAvec": "halteres"
+  },
+  {
+   "id": "fentes-bulgares",
+   "nom": "Fentes bulgares",
+   "bloc": "corps",
+   "muscles": [
+    "jambes",
+    "fessiers"
+   ],
+   "materiel": [],
+   "mode": "reps",
+   "niveaux": [
+    "Poids du corps",
+    "Avec haltères"
+   ],
+   "adulteSeulement": false,
+   "description": "Pied arrière posé sur une chaise, descends à la verticale sur la jambe avant puis remonte.",
+   "series": 3,
+   "reps": 8,
+   "chargeAvec": "halteres"
+  },
+  {
+   "id": "sdt-roumain-halteres",
+   "nom": "Soulevé de terre roumain (haltères)",
+   "bloc": "corps",
+   "muscles": [
+    "ischios",
+    "fessiers",
+    "dos"
+   ],
+   "materiel": [
+    "halteres"
+   ],
+   "mode": "reps",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Haltères devant les cuisses, pousse les hanches vers l'arrière en gardant le dos plat, puis reviens debout.",
+   "series": 3,
+   "reps": 8,
+   "chargeAvec": "halteres"
+  },
+  {
+   "id": "sdt-roumain-barre",
+   "nom": "Soulevé de terre roumain (barre)",
+   "bloc": "corps",
+   "muscles": [
+    "ischios",
+    "fessiers",
+    "dos"
+   ],
+   "materiel": [
+    "barre"
+   ],
+   "mode": "reps",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Barre devant les cuisses, bascule le bassin vers l'arrière dos plat, jambes presque tendues, puis redresse-toi.",
+   "series": 3,
+   "reps": 8,
+   "chargeAvec": "barre"
+  },
+  {
+   "id": "pont-fessier",
+   "nom": "Pont fessier au sol",
+   "bloc": "corps",
+   "muscles": [
+    "fessiers",
+    "ischios"
+   ],
+   "materiel": [],
+   "mode": "reps",
+   "niveaux": [
+    "Pont fessier",
+    "Pont fessier une jambe"
+   ],
+   "adulteSeulement": false,
+   "description": "Allongé sur le dos, genoux pliés, pousse les hanches vers le haut en serrant les fessiers, puis redescends.",
+   "series": 3,
+   "reps": 12
+  },
+  {
+   "id": "hip-thrust",
+   "nom": "Hip thrust",
+   "bloc": "corps",
+   "muscles": [
+    "fessiers"
+   ],
+   "materiel": [
+    "banc"
+   ],
+   "mode": "reps",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Haut du dos posé sur un banc, un haltère sur les hanches, pousse le bassin vers le haut puis redescends contrôlé.",
+   "series": 3,
+   "reps": 10,
+   "chargeAvec": "halteres"
+  },
+  {
+   "id": "presse-cuisses",
+   "nom": "Presse à cuisses",
+   "bloc": "corps",
+   "muscles": [
+    "jambes"
+   ],
+   "materiel": [
+    "machines"
+   ],
+   "mode": "reps",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Assis sur la machine, pousse la plateforme sans verrouiller les genoux, puis reviens lentement.",
+   "series": 3,
+   "reps": 10
+  },
+  {
+   "id": "pompes",
+   "nom": "Pompes",
+   "bloc": "corps",
+   "muscles": [
+    "pectoraux",
+    "triceps",
+    "épaules"
+   ],
+   "materiel": [],
+   "mode": "reps",
+   "niveaux": [
+    "Pompes murales",
+    "Pompes inclinées",
+    "Pompes sur les genoux",
+    "Pompes au sol",
+    "Pompes lestées"
+   ],
+   "adulteSeulement": false,
+   "description": "Mains sous les épaules, corps aligné de la tête aux talons. Descends la poitrine vers le sol, puis repousse.",
+   "series": 3,
+   "reps": 8
+  },
+  {
+   "id": "floor-press",
+   "nom": "Floor press aux haltères",
+   "bloc": "corps",
+   "muscles": [
+    "pectoraux",
+    "triceps"
+   ],
+   "materiel": [
+    "halteres"
+   ],
+   "mode": "reps",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Allongé au sol, genoux pliés, pousse les haltères vers le plafond. Les coudes touchent le sol entre deux répétitions.",
+   "series": 3,
+   "reps": 8,
+   "chargeAvec": "halteres"
+  },
+  {
+   "id": "developpe-couche-halteres",
+   "nom": "Développé couché haltères",
+   "bloc": "corps",
+   "muscles": [
+    "pectoraux",
+    "épaules"
+   ],
+   "materiel": [
+    "halteres",
+    "banc"
+   ],
+   "mode": "reps",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Allongé sur un banc, pousse les haltères au-dessus de la poitrine, coudes à 45 degrés du corps.",
+   "series": 3,
+   "reps": 8,
+   "chargeAvec": "halteres"
+  },
+  {
+   "id": "developpe-couche-barre",
+   "nom": "Développé couché barre",
+   "bloc": "corps",
+   "muscles": [
+    "pectoraux",
+    "triceps"
+   ],
+   "materiel": [
+    "barre",
+    "banc"
+   ],
+   "mode": "reps",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": true,
+   "description": "Allongé sur un banc, descends la barre en bas de la poitrine puis pousse. Fais-toi aider d'un pareur.",
+   "series": 3,
+   "reps": 8,
+   "chargeAvec": "barre"
+  },
+  {
+   "id": "developpe-militaire",
+   "nom": "Développé militaire haltères",
+   "bloc": "corps",
+   "muscles": [
+    "épaules",
+    "triceps"
+   ],
+   "materiel": [
+    "halteres"
+   ],
+   "mode": "reps",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Debout, haltères à hauteur d'épaules, pousse-les au-dessus de la tête sans cambrer le dos.",
+   "series": 3,
+   "reps": 8,
+   "chargeAvec": "halteres"
+  },
+  {
+   "id": "elevations-laterales",
+   "nom": "Élévations latérales",
+   "bloc": "corps",
+   "muscles": [
+    "épaules"
+   ],
+   "materiel": [
+    "halteres"
+   ],
+   "mode": "reps",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Bras le long du corps, lève les haltères sur les côtés jusqu'à l'horizontale, puis redescends lentement.",
+   "series": 3,
+   "reps": 12,
+   "chargeAvec": "halteres"
+  },
+  {
+   "id": "extensions-triceps",
+   "nom": "Extensions triceps",
+   "bloc": "corps",
+   "muscles": [
+    "triceps"
+   ],
+   "materiel": [
+    "halteres"
+   ],
+   "mode": "reps",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Un haltère tenu à deux mains derrière la tête, tends les bras vers le haut en gardant les coudes fixes.",
+   "series": 3,
+   "reps": 10,
+   "chargeAvec": "halteres"
+  },
+  {
+   "id": "dips-chaise",
+   "nom": "Dips sur chaise",
+   "bloc": "corps",
+   "muscles": [
+    "triceps",
+    "épaules"
+   ],
+   "materiel": [],
+   "mode": "reps",
+   "niveaux": [
+    "Jambes pliées",
+    "Jambes tendues"
+   ],
+   "adulteSeulement": false,
+   "description": "Mains sur le bord d'une chaise stable, plie les coudes pour descendre le bassin puis repousse.",
+   "series": 3,
+   "reps": 8
+  },
+  {
+   "id": "rowing-halteres",
+   "nom": "Rowing haltère",
+   "bloc": "corps",
+   "muscles": [
+    "dos",
+    "biceps"
+   ],
+   "materiel": [
+    "halteres"
+   ],
+   "mode": "reps",
+   "niveaux": [
+    "Rowing léger",
+    "Rowing haltère",
+    "Rowing avec pause en haut"
+   ],
+   "adulteSeulement": false,
+   "description": "Une main et un genou en appui, dos plat. Tire l'haltère vers la hanche en serrant l'omoplate.",
+   "series": 3,
+   "reps": 10,
+   "chargeAvec": "halteres"
+  },
+  {
+   "id": "rowing-elastique",
+   "nom": "Rowing élastique",
+   "bloc": "corps",
+   "muscles": [
+    "dos"
+   ],
+   "materiel": [
+    "elastiques"
+   ],
+   "mode": "reps",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Élastique fixé devant toi, tire les mains vers le bas des côtes en serrant les omoplates.",
+   "series": 3,
+   "reps": 12
+  },
+  {
+   "id": "rowing-barre",
+   "nom": "Rowing barre",
+   "bloc": "corps",
+   "muscles": [
+    "dos"
+   ],
+   "materiel": [
+    "barre"
+   ],
+   "mode": "reps",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": true,
+   "description": "Buste penché dos plat, tire la barre vers le bas du ventre puis redescends contrôlé.",
+   "series": 3,
+   "reps": 8,
+   "chargeAvec": "barre"
+  },
+  {
+   "id": "tractions",
+   "nom": "Tractions",
+   "bloc": "corps",
+   "muscles": [
+    "dos",
+    "biceps"
+   ],
+   "materiel": [
+    "tractions"
+   ],
+   "mode": "reps",
+   "niveaux": [
+    "Suspension",
+    "Tractions négatives",
+    "Tractions",
+    "Tractions lestées"
+   ],
+   "adulteSeulement": false,
+   "description": "Suspendu à la barre, tire jusqu'à passer le menton au-dessus, puis redescends lentement.",
+   "series": 3,
+   "reps": 5
+  },
+  {
+   "id": "tirage-poulie",
+   "nom": "Tirage poulie",
+   "bloc": "corps",
+   "muscles": [
+    "dos"
+   ],
+   "materiel": [
+    "machines"
+   ],
+   "mode": "reps",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Assis face à la poulie, tire la barre vers le haut de la poitrine en serrant les omoplates.",
+   "series": 3,
+   "reps": 10
+  },
+  {
+   "id": "curl-halteres",
+   "nom": "Curl haltères",
+   "bloc": "corps",
+   "muscles": [
+    "biceps"
+   ],
+   "materiel": [
+    "halteres"
+   ],
+   "mode": "reps",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Debout, coudes collés au corps, fléchis les avant-bras pour monter les haltères puis redescends.",
+   "series": 3,
+   "reps": 10,
+   "chargeAvec": "halteres"
+  },
+  {
+   "id": "planche",
+   "nom": "Planche",
+   "bloc": "corps",
+   "muscles": [
+    "tronc"
+   ],
+   "materiel": [],
+   "mode": "chrono",
+   "niveaux": [
+    "Planche sur les genoux",
+    "Planche sur les avant-bras",
+    "Planche mains tendues"
+   ],
+   "adulteSeulement": false,
+   "description": "En appui sur les avant-bras et les pointes de pieds, corps aligné, ventre serré.",
+   "series": 3,
+   "secondes": 40
+  },
+  {
+   "id": "gainage-lateral",
+   "nom": "Gainage latéral",
+   "bloc": "corps",
+   "muscles": [
+    "obliques"
+   ],
+   "materiel": [],
+   "mode": "chrono",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Sur le côté, appui sur un avant-bras, bassin levé, corps en ligne droite.",
+   "series": 3,
+   "secondes": 30
+  },
+  {
+   "id": "superman",
+   "nom": "Superman",
+   "bloc": "corps",
+   "muscles": [
+    "bas du dos",
+    "fessiers"
+   ],
+   "materiel": [],
+   "mode": "reps",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Allongé sur le ventre, lève bras et jambes en même temps, marque une pause, puis relâche.",
+   "series": 3,
+   "reps": 12
+  },
+  {
+   "id": "mountain-climbers",
+   "nom": "Mountain climbers",
+   "bloc": "corps",
+   "muscles": [
+    "tronc",
+    "cardio"
+   ],
+   "materiel": [],
+   "mode": "chrono",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "En appui sur les mains, ramène les genoux vers la poitrine en alternant, à bon rythme.",
+   "series": 3,
+   "secondes": 30
+  },
+  {
+   "id": "releves-jambes",
+   "nom": "Relevés de jambes",
+   "bloc": "corps",
+   "muscles": [
+    "abdominaux"
+   ],
+   "materiel": [],
+   "mode": "reps",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Allongé sur le dos, lève les jambes tendues jusqu'à la verticale puis redescends sans cambrer.",
+   "series": 3,
+   "reps": 10
+  },
+  {
+   "id": "swing-kettlebell",
+   "nom": "Swing kettlebell",
+   "bloc": "corps",
+   "muscles": [
+    "fessiers",
+    "dos",
+    "cardio"
+   ],
+   "materiel": [
+    "kettlebell"
+   ],
+   "mode": "reps",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Charnière de hanche : projette la kettlebell à hauteur de poitrine avec les hanches, pas avec les bras.",
+   "series": 3,
+   "reps": 12,
+   "chargeAvec": "kettlebell"
+  },
+  {
+   "id": "leg-curl",
+   "nom": "Leg curl",
+   "bloc": "corps",
+   "muscles": [
+    "ischios"
+   ],
+   "materiel": [
+    "machines"
+   ],
+   "mode": "reps",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Sur la machine, fléchis les genoux pour ramener le rouleau vers les fessiers, puis reviens lentement.",
+   "series": 3,
+   "reps": 10
+  },
+  {
+   "id": "rameur-intervalles",
+   "nom": "Rameur en intervalles",
+   "bloc": "cardio",
+   "muscles": [
+    "corps entier"
+   ],
+   "materiel": [
+    "rameur"
+   ],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Alterne deux minutes vives et une minute facile. Jambes, dos puis bras à l'aller, l'inverse au retour.",
+   "minutes": 12,
+   "intervalles": [
+    120,
+    60,
+    "vif",
+    "facile"
+   ]
+  },
+  {
+   "id": "rameur-continu",
+   "nom": "Rameur continu",
+   "bloc": "cardio",
+   "muscles": [
+    "corps entier"
+   ],
+   "materiel": [
+    "rameur"
+   ],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Rame à allure régulière, où tu peux encore parler en phrases courtes.",
+   "minutes": 10
+  },
+  {
+   "id": "velo-intervalles",
+   "nom": "Vélo en intervalles",
+   "bloc": "cardio",
+   "muscles": [
+    "jambes",
+    "cardio"
+   ],
+   "materiel": [
+    "velo"
+   ],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Pédale en alternant phases vives et phases faciles.",
+   "minutes": 6,
+   "intervalles": [
+    120,
+    60,
+    "vif",
+    "facile"
+   ]
+  },
+  {
+   "id": "velo-continu",
+   "nom": "Vélo continu",
+   "bloc": "cardio",
+   "muscles": [
+    "jambes",
+    "cardio"
+   ],
+   "materiel": [
+    "velo"
+   ],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Pédale à allure régulière, résistance moyenne.",
+   "minutes": 10
+  },
+  {
+   "id": "course-marche",
+   "nom": "Course et marche en intervalles",
+   "bloc": "cardio",
+   "muscles": [
+    "jambes",
+    "cardio"
+   ],
+   "materiel": [],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Alterne course lente et marche. Tu dois pouvoir parler en phrases courtes pendant la course.",
+   "minutes": 12,
+   "intervalles": [
+    60,
+    120,
+    "course",
+    "marche"
+   ]
+  },
+  {
+   "id": "marche-rapide",
+   "nom": "Marche rapide",
+   "bloc": "cardio",
+   "muscles": [
+    "jambes",
+    "cardio"
+   ],
+   "materiel": [],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Marche à allure soutenue, bras actifs, sans courir.",
+   "minutes": 10
+  },
+  {
+   "id": "corde-intervalles",
+   "nom": "Corde à sauter en intervalles",
+   "bloc": "cardio",
+   "muscles": [
+    "mollets",
+    "cardio"
+   ],
+   "materiel": [
+    "corde"
+   ],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Alterne une minute de sauts et trente secondes de repos actif.",
+   "minutes": 3,
+   "intervalles": [
+    60,
+    30,
+    "vif",
+    "facile"
+   ]
+  },
+  {
+   "id": "tapis-course",
+   "nom": "Tapis de course",
+   "bloc": "cardio",
+   "muscles": [
+    "jambes",
+    "cardio"
+   ],
+   "materiel": [
+    "tapis"
+   ],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Marche ou cours à allure régulière sur le tapis.",
+   "minutes": 10
+  },
+  {
+   "id": "etir-quadriceps",
+   "nom": "Quadriceps",
+   "bloc": "etirements",
+   "muscles": [
+    "cuisses"
+   ],
+   "materiel": [],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Debout, tire le talon vers la fesse, genoux proches, trente secondes par jambe.",
+   "minutes": 1.5
+  },
+  {
+   "id": "etir-ischios",
+   "nom": "Ischios",
+   "bloc": "etirements",
+   "muscles": [
+    "arrière des cuisses"
+   ],
+   "materiel": [],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Jambe tendue devant sur un support bas, penche le buste dos plat, trente secondes par jambe.",
+   "minutes": 1.5
+  },
+  {
+   "id": "etir-mollets",
+   "nom": "Mollets",
+   "bloc": "etirements",
+   "muscles": [
+    "mollets"
+   ],
+   "materiel": [],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Mains contre un mur, jambe arrière tendue, talon au sol, trente secondes par jambe.",
+   "minutes": 1.5
+  },
+  {
+   "id": "etir-fessiers",
+   "nom": "Fessiers",
+   "bloc": "etirements",
+   "muscles": [
+    "fessiers"
+   ],
+   "materiel": [],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Allongé, cheville sur le genou opposé, ramène la jambe vers toi, trente secondes par côté.",
+   "minutes": 1.5
+  },
+  {
+   "id": "etir-pectoraux",
+   "nom": "Pectoraux",
+   "bloc": "etirements",
+   "muscles": [
+    "pectoraux"
+   ],
+   "materiel": [],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Avant-bras contre un montant de porte, avance le buste jusqu'à sentir l'étirement devant l'épaule.",
+   "minutes": 1.5
+  },
+  {
+   "id": "etir-dos",
+   "nom": "Dos",
+   "bloc": "etirements",
+   "muscles": [
+    "dos"
+   ],
+   "materiel": [],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "À quatre pattes, assieds-toi sur les talons, bras allongés devant toi, front proche du sol.",
+   "minutes": 1.5
+  },
+  {
+   "id": "etir-epaules",
+   "nom": "Épaules",
+   "bloc": "etirements",
+   "muscles": [
+    "épaules"
+   ],
+   "materiel": [],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Un bras tendu devant la poitrine, ramène-le avec l'autre bras, trente secondes par côté.",
+   "minutes": 1.5
+  },
+  {
+   "id": "etir-hanches",
+   "nom": "Fléchisseurs de hanche",
+   "bloc": "etirements",
+   "muscles": [
+    "hanches"
+   ],
+   "materiel": [],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "En fente basse, genou arrière au sol, pousse doucement le bassin vers l'avant.",
+   "minutes": 1.5
+  },
+  {
+   "id": "etir-lombaires",
+   "nom": "Lombaires",
+   "bloc": "etirements",
+   "muscles": [
+    "bas du dos"
+   ],
+   "materiel": [],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Allongé sur le dos, ramène les genoux vers la poitrine et balance doucement.",
+   "minutes": 2
+  },
+  {
+   "id": "etir-adducteurs",
+   "nom": "Adducteurs",
+   "bloc": "etirements",
+   "muscles": [
+    "intérieur des cuisses"
+   ],
+   "materiel": [],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Assis, plantes de pieds jointes, genoux vers le sol, buste droit.",
+   "minutes": 2
+  },
+  {
+   "id": "etir-nuque",
+   "nom": "Nuque et trapèzes",
+   "bloc": "etirements",
+   "muscles": [
+    "nuque"
+   ],
+   "materiel": [],
+   "mode": "fixe",
+   "niveaux": [
+    "Standard"
+   ],
+   "adulteSeulement": false,
+   "description": "Assis droit, incline la tête sur le côté, épaule opposée relâchée, sans tirer.",
+   "minutes": 1.5
+  }
+ ]
+}

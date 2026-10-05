@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fitness</title>
+<meta name="theme-color" content="#1c1f23">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="update" hidden><span>Nouvelle version disponible.</span><button id="updBtn">Actualiser</button></div>
+<main id="main"><p class="sub pad">Chargement…</p></main>
+<nav id="tabs" aria-label="Navigation principale"></nav>
+<div id="sheet" hidden><div class="scrim" data-a="sheet-close"></div><div class="panel" role="dialog" aria-modal="true"><div id="sheetBody"></div></div></div>
+<div id="toast" role="status" hidden></div>
+<noscript><p>Cette application demande JavaScript.</p></noscript>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
