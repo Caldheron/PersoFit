@@ -31,3 +31,10 @@ export function detail(exo, i, lieu) {
   if (exo.niveaux.length > 1) p.push(`niveau ${i.niveau + 1}/${exo.niveaux.length}`);
   return p.join(' · ');
 }
+
+export const zoneMinutes = t => ({ min: Math.round(t.id * ZONE.min), max: Math.round(t.id * ZONE.max) });
+export function statutSeance(totS, type) {
+  const bs = type.id * 60, pct = totS / bs;
+  const etat = pct < ZONE.min ? 'bas' : pct > ZONE.max ? 'haut' : 'ok';
+  return { pct, etat, manqueMin: Math.max(1, Math.round((bs - totS) / 60)), depasseMin: Math.max(1, Math.round((totS - bs) / 60)) };
+}

@@ -22,7 +22,7 @@ function listHtml() {
 }
 function renderListe() {
   const lieu = lieuDe(S, S.lieuActif);
-  return `<div class="hd"><h1>Exercices</h1></div><input type="text" id="exQ" data-i="ex-q" placeholder="Rechercher un exercice" value="${esc(X.q)}"><div class="chips">${[['tous', 'Tous']].concat(BLOCS.map(b => [b.id, b.nom])).map(c => `<button class="chip${X.f === c[0] ? ' on' : ''}" data-a="ex-f" data-f="${c[0]}">${esc(c[1])}</button>`).join('')}</div>
+  return `<div class="hd"><h1>Exercices</h1></div><div class="lbl">Lieu</div><div class="seg">${S.lieux.map(l => `<button class="${l.nom === S.lieuActif ? 'on' : ''}" data-a="ex-lieu" data-l="${esc(l.nom)}">${esc(l.nom)}</button>`).join('')}</div><input type="text" id="exQ" style="margin-top:12px" data-i="ex-q" placeholder="Rechercher un exercice" value="${esc(X.q)}"><div class="chips">${[['tous', 'Tous']].concat(BLOCS.map(b => [b.id, b.nom])).map(c => `<button class="chip${X.f === c[0] ? ' on' : ''}" data-a="ex-f" data-f="${c[0]}">${esc(c[1])}</button>`).join('')}</div>
 <label class="chk"><input type="checkbox" data-c="ex-only"${X.only ? ' checked' : ''}> Seulement ce que je peux faire ici (${esc(lieu.nom)})</label><div id="exList">${listHtml()}</div>
 <button class="row addrow" data-a="ex-new"><span>${icon('plus', 16)} Créer mon exercice</span>${icon('chevron', 16)}</button>`;
 }
@@ -59,6 +59,7 @@ function formHtml() {
 const nouveauForm = () => ({ id: null, nom: '', bloc: 'corps', mode: 'reps', series: 3, reps: 10, secondes: 30, minutes: 5, chargeAvec: '', materiel: [], description: '' });
 
 on({
+  'ex-lieu': el => { S.lieuActif = el.dataset.l; save(); bus.refresh(); },
   'ex-f': el => { X.f = el.dataset.f; bus.refresh(); },
   fiche: el => { X.fiche = el.dataset.e; bus.refresh(); },
   'fiche-retour': () => { X.fiche = null; bus.refresh(); },

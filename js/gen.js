@@ -27,9 +27,10 @@ export function proposer(S, typeId, lieuNom) {
   const T = TYPES.find(t => t.id === typeId), lieu = lieuDe(S, lieuNom), blocs = [];
   for (const b of BLOCS) {
     const bud = T.budgets[b.id]; if (!bud) continue;
-    const bs = bud * 60, list = []; let t = 0;
+    const bs = bud * 60, list = [], fams = new Set(); let t = 0;
     for (const exo of candidats(S, b.id, lieu)) {
       if (t >= bs * GEN.cible) break;
+      if (exo.famille && fams.has(exo.famille)) continue;
       const inst = defaultInst(S, exo, lieu); const nv = estNouveau(S, exo.id);
       let d = dureeS(exo, inst, S.reglages, nv);
       if (t + d > bs * GEN.max) {
@@ -39,6 +40,7 @@ export function proposer(S, typeId, lieuNom) {
         if (t + d > bs * GEN.max) continue;
       }
       list.push({ uid: uid(), exoId: exo.id, ...inst, fait: false }); t += d;
+      if (exo.famille) fams.add(exo.famille);
     }
     t = grow(S, list, bs, t);
     blocs.push({ bloc: b.id, exercices: list });
@@ -63,20 +65,28 @@ function grow(S, list, bs, t) {
   }
   return t;
 }
-export function completer(S, c, blocId) {
-  const T = TYPES.find(t => t.id === c.type), bud = T.budgets[blocId]; if (!bud) return null;
-  const blk = c.blocs.find(b => b.bloc === blocId); if (!blk) return null;
-  const bs = bud * 60, t = totalBloc(S, blk), missing = bs - t; if (missing <= 0) return null;
-  const present = new Set(blk.exercices.map(x => x.exoId)), lieu = lieuDe(S, c.lieu);
-  let best = null;
-  for (const exo of candidats(S, blocId, lieu)) {
-    if (present.has(exo.id)) continue;
-    const inst = defaultInst(S, exo, lieu), nv = estNouveau(S, exo.id);
-    if (exo.mode === 'fixe') inst.minutes = Math.max(1, Math.round((missing / 60) * 2) / 2);
-    const d = dureeS(exo, inst, S.reglages, nv);
-    if (t + d > bs * GEN.max) continue;
-    const gap = Math.abs(missing - d);
-    if (!best || gap < best.gap) best = { gap, inst: { uid: uid(), exoId: exo.id, ...inst, fait: false } };
+export const totalSeance = (S, c) => c.blocs.reduce((t, b) => t + totalBloc(S, b), 0);
+export function completer(S, c, cible) {
+  const T = TYPES.find(t => t.id === c.type), lieu = lieuDe(S, c.lieu), tot = totalSeance(S, c);
+  const sum = id => { const b = c.blocs.find(x => x.bloc === id); return b ? totalBloc(S, b) : 0; };
+  const ordre = cible === 'exercices' ? (sum('cardio') > sum('corps') ? ['cardio', 'corps'] : ['corps', 'cardio']) : [cible];
+  for (const id of ordre) {
+    const blk = c.blocs.find(b => b.bloc === id); if (!blk) continue;
+    const vide = id === 'echauffement' || id === 'etirements';
+    const missing = vide ? T.budgets[id] * 60 : T.id * 60 - tot; if (missing <= 0) continue;
+    const present = new Set(blk.exercices.map(x => x.exoId));
+    const fams = new Set(blk.exercices.map(x => (allEx(S).find(e => e.id === x.exoId) || {}).famille).filter(Boolean));
+    let best = null;
+    for (const exo of candidats(S, id, lieu)) {
+      if (present.has(exo.id) || (exo.famille && fams.has(exo.famille))) continue;
+      const inst = defaultInst(S, exo, lieu), nv = estNouveau(S, exo.id);
+      if (exo.mode === 'fixe' && !vide) inst.minutes = Math.max(1, Math.round((missing / 60) * 2) / 2);
+      const d = dureeS(exo, inst, S.reglages, nv);
+      if (!vide && tot + d > T.id * 60 * GEN.max) continue;
+      const gap = Math.abs(missing - d);
+      if (!best || gap < best.gap) best = { gap, inst: { uid: uid(), exoId: exo.id, ...inst, fait: false } };
+    }
+    if (best) return { bloc: id, inst: best.inst };
   }
-  return best ? best.inst : null;
+  return null;
 }

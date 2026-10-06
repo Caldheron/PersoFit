@@ -1,4 +1,4 @@
-const VERSION = 'fitness-1.0.0';
+const VERSION = 'fitness-1.1.0';
 const FILES = ['./', './index.html', './css/style.css', './manifest.webmanifest', './data/exercices.json', './icons/icon-192.png', './icons/icon-512.png',
   './js/app.js', './js/bus.js', './js/calc.js', './js/chrono.js', './js/data.js', './js/gen.js', './js/lib.js', './js/store.js', './js/ui-chrono.js', './js/ui-exercices.js',
   './js/ui-historique.js', './js/ui-reglages.js', './js/ui-seance.js', './js/util.js', './js/version.js'];

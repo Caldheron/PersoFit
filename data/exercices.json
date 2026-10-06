@@ -1,5 +1,5 @@
 {
- "version": 1,
+ "version": 2,
  "exercices": [
   {
    "id": "velo-facile",
@@ -18,7 +18,8 @@
    ],
    "adulteSeulement": false,
    "description": "Pédale à allure tranquille, sans forcer, pour monter doucement en température.",
-   "minutes": 5
+   "minutes": 5,
+   "famille": "velo"
   },
   {
    "id": "rameur-facile",
@@ -36,7 +37,8 @@
    ],
    "adulteSeulement": false,
    "description": "Rame à allure douce : jambes, dos puis bras, sans chercher la puissance.",
-   "minutes": 5
+   "minutes": 5,
+   "famille": "rameur"
   },
   {
    "id": "corde-echauffement",
@@ -55,7 +57,8 @@
    ],
    "adulteSeulement": false,
    "description": "Saute à petits rebonds réguliers, poignets souples, en restant léger sur les pieds.",
-   "minutes": 3
+   "minutes": 3,
+   "famille": "corde"
   },
   {
    "id": "jumping-jacks",
@@ -156,7 +159,8 @@
    "adulteSeulement": false,
    "description": "Pieds largeur d'épaules, descends comme pour t'asseoir, dos droit, puis remonte en poussant dans les talons.",
    "series": 3,
-   "reps": 12
+   "reps": 12,
+   "famille": "squat"
   },
   {
    "id": "goblet-squat",
@@ -181,7 +185,8 @@
    "description": "Tiens un haltère contre la poitrine et descends en squat en gardant le buste haut, puis remonte.",
    "series": 3,
    "reps": 10,
-   "chargeAvec": "halteres"
+   "chargeAvec": "halteres",
+   "famille": "squat"
   },
   {
    "id": "squat-halteres",
@@ -204,7 +209,8 @@
    "description": "Un haltère dans chaque main le long du corps, descends en squat dos droit, puis remonte sans verrouiller les genoux.",
    "series": 3,
    "reps": 10,
-   "chargeAvec": "halteres"
+   "chargeAvec": "halteres",
+   "famille": "squat"
   },
   {
    "id": "squat-barre",
@@ -225,7 +231,8 @@
    "description": "Barre posée sur les trapèzes, descends en gardant le dos neutre, puis remonte. Prévois un moyen sûr de poser la barre.",
    "series": 3,
    "reps": 8,
-   "chargeAvec": "barre"
+   "chargeAvec": "barre",
+   "famille": "squat"
   },
   {
    "id": "fentes-alternees",
@@ -246,7 +253,8 @@
    "description": "Fais un grand pas en avant, descends le genou arrière vers le sol, puis reviens et change de jambe.",
    "series": 3,
    "reps": 8,
-   "chargeAvec": "halteres"
+   "chargeAvec": "halteres",
+   "famille": "fentes"
   },
   {
    "id": "fentes-bulgares",
@@ -266,7 +274,8 @@
    "description": "Pied arrière posé sur une chaise, descends à la verticale sur la jambe avant puis remonte.",
    "series": 3,
    "reps": 8,
-   "chargeAvec": "halteres"
+   "chargeAvec": "halteres",
+   "famille": "fentes"
   },
   {
    "id": "sdt-roumain-halteres",
@@ -288,7 +297,8 @@
    "description": "Haltères devant les cuisses, pousse les hanches vers l'arrière en gardant le dos plat, puis reviens debout.",
    "series": 3,
    "reps": 8,
-   "chargeAvec": "halteres"
+   "chargeAvec": "halteres",
+   "famille": "souleve-roumain"
   },
   {
    "id": "sdt-roumain-barre",
@@ -310,7 +320,8 @@
    "description": "Barre devant les cuisses, bascule le bassin vers l'arrière dos plat, jambes presque tendues, puis redresse-toi.",
    "series": 3,
    "reps": 8,
-   "chargeAvec": "barre"
+   "chargeAvec": "barre",
+   "famille": "souleve-roumain"
   },
   {
    "id": "pont-fessier",
@@ -329,7 +340,8 @@
    "adulteSeulement": false,
    "description": "Allongé sur le dos, genoux pliés, pousse les hanches vers le haut en serrant les fessiers, puis redescends.",
    "series": 3,
-   "reps": 12
+   "reps": 12,
+   "famille": "pont"
   },
   {
    "id": "hip-thrust",
@@ -349,7 +361,8 @@
    "description": "Haut du dos posé sur un banc, un haltère sur les hanches, pousse le bassin vers le haut puis redescends contrôlé.",
    "series": 3,
    "reps": 10,
-   "chargeAvec": "halteres"
+   "chargeAvec": "halteres",
+   "famille": "pont"
   },
   {
    "id": "presse-cuisses",
@@ -412,7 +425,8 @@
    "description": "Allongé au sol, genoux pliés, pousse les haltères vers le plafond. Les coudes touchent le sol entre deux répétitions.",
    "series": 3,
    "reps": 8,
-   "chargeAvec": "halteres"
+   "chargeAvec": "halteres",
+   "famille": "developpe-couche"
   },
   {
    "id": "developpe-couche-halteres",
@@ -434,7 +448,8 @@
    "description": "Allongé sur un banc, pousse les haltères au-dessus de la poitrine, coudes à 45 degrés du corps.",
    "series": 3,
    "reps": 8,
-   "chargeAvec": "halteres"
+   "chargeAvec": "halteres",
+   "famille": "developpe-couche"
   },
   {
    "id": "developpe-couche-barre",
@@ -456,7 +471,8 @@
    "description": "Allongé sur un banc, descends la barre en bas de la poitrine puis pousse. Fais-toi aider d'un pareur.",
    "series": 3,
    "reps": 8,
-   "chargeAvec": "barre"
+   "chargeAvec": "barre",
+   "famille": "developpe-couche"
   },
   {
    "id": "developpe-militaire",
@@ -559,7 +575,8 @@
    "description": "Une main et un genou en appui, dos plat. Tire l'haltère vers la hanche en serrant l'omoplate.",
    "series": 3,
    "reps": 10,
-   "chargeAvec": "halteres"
+   "chargeAvec": "halteres",
+   "famille": "rowing"
   },
   {
    "id": "rowing-elastique",
@@ -578,7 +595,8 @@
    "adulteSeulement": false,
    "description": "Élastique fixé devant toi, tire les mains vers le bas des côtes en serrant les omoplates.",
    "series": 3,
-   "reps": 12
+   "reps": 12,
+   "famille": "rowing"
   },
   {
    "id": "rowing-barre",
@@ -598,7 +616,8 @@
    "description": "Buste penché dos plat, tire la barre vers le bas du ventre puis redescends contrôlé.",
    "series": 3,
    "reps": 8,
-   "chargeAvec": "barre"
+   "chargeAvec": "barre",
+   "famille": "rowing"
   },
   {
    "id": "tractions",
@@ -814,7 +833,8 @@
     60,
     "vif",
     "facile"
-   ]
+   ],
+   "famille": "rameur"
   },
   {
    "id": "rameur-continu",
@@ -832,7 +852,8 @@
    ],
    "adulteSeulement": false,
    "description": "Rame à allure régulière, où tu peux encore parler en phrases courtes.",
-   "minutes": 10
+   "minutes": 10,
+   "famille": "rameur"
   },
   {
    "id": "velo-intervalles",
@@ -857,7 +878,8 @@
     60,
     "vif",
     "facile"
-   ]
+   ],
+   "famille": "velo"
   },
   {
    "id": "velo-continu",
@@ -876,7 +898,8 @@
    ],
    "adulteSeulement": false,
    "description": "Pédale à allure régulière, résistance moyenne.",
-   "minutes": 10
+   "minutes": 10,
+   "famille": "velo"
   },
   {
    "id": "course-marche",
@@ -899,7 +922,8 @@
     120,
     "course",
     "marche"
-   ]
+   ],
+   "famille": "course"
   },
   {
    "id": "marche-rapide",
@@ -916,7 +940,8 @@
    ],
    "adulteSeulement": false,
    "description": "Marche à allure soutenue, bras actifs, sans courir.",
-   "minutes": 10
+   "minutes": 10,
+   "famille": "course"
   },
   {
    "id": "corde-intervalles",
@@ -941,7 +966,8 @@
     30,
     "vif",
     "facile"
-   ]
+   ],
+   "famille": "corde"
   },
   {
    "id": "tapis-course",
@@ -960,7 +986,8 @@
    ],
    "adulteSeulement": false,
    "description": "Marche ou cours à allure régulière sur le tapis.",
-   "minutes": 10
+   "minutes": 10,
+   "famille": "course"
   },
   {
    "id": "etir-quadriceps",

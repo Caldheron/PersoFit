@@ -59,3 +59,6 @@ input.num{width:84px;text-align:center}input.bad{border-color:var(--wn)}
 .sh{display:flex;justify-content:space-between;align-items:center;gap:8px}
 #toast{pointer-events:none;position:fixed;left:50%;transform:translateX(-50%);bottom:calc(76px + env(safe-area-inset-bottom));background:var(--tx);color:var(--bg);padding:10px 14px;border-radius:4px;font-size:14px;z-index:30;max-width:90%}
 [hidden]{display:none!important}
+
+.exo-head{margin-top:16px}.bloc.sub{margin-top:10px}.bloc.sub .bt{font-size:15px}
+.note.warnrow{align-items:center}
